@@ -1,11 +1,11 @@
 # wapt_ac-gre
 
-##Installation du serveur
+#Installation du serveur
 install.sh 
 
-##Mise à jour du serveur
+#Mise à jour du serveur
 update.sh
 
-###Mot de passe admin_wapt
+#Mot de passe admin_wapt
 password.sh
 
