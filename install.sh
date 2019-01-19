@@ -21,3 +21,6 @@ wget -O - https://wapt.tranquil.it/debian/tiswapt-pub.gpg  | apt-key add -
 echo  "deb  https://wapt.tranquil.it/debian/wapt-1.6/ $(lsb_release -c -s) main"  > /etc/apt/sources.list.d/wapt.list
 apt-get update
 apt-get install -y tis-waptserver tis-waptrepo tis-waptsetup
+
+#Script post conf
+NCURSES_NO_UTF8_ACS=1 PYTHONHOME=/opt/wapt PYTHONPATH=/opt/wapt /opt/wapt/bin/python !!!install.py!!! $@
